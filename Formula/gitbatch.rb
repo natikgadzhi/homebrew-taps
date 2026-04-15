@@ -5,21 +5,21 @@
 class Gitbatch < Formula
   desc "Batch-update git repositories in parallel"
   homepage "https://github.com/natikgadzhi/gitbatch"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.2.0/gitbatch_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d64eeed6d0958075172e3710f31d60d99137f6f73c5a70926c7261eded9ff732"
+      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.3.0/gitbatch_0.3.0_darwin_amd64.tar.gz"
+      sha256 "6a43b0ae53d9b47d52204d07365039c8a5544c9aa7a4b9d01df47c40b0f9145b"
 
       define_method(:install) do
         bin.install "gitbatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.2.0/gitbatch_0.2.0_darwin_arm64.tar.gz"
-      sha256 "0b53219abb0ad7982bc5649a420414a11dc23ae1d7b78abff36a45b9677b11b8"
+      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.3.0/gitbatch_0.3.0_darwin_arm64.tar.gz"
+      sha256 "55c9b95fc15da9f5da003559bf35a64ac2772c2b4eabf681fed419114da555b8"
 
       define_method(:install) do
         bin.install "gitbatch"
@@ -29,15 +29,15 @@ class Gitbatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.2.0/gitbatch_0.2.0_linux_amd64.tar.gz"
-      sha256 "a7470ab0727351f02e8e25f2b7ffa3df5c94321897d59650283772ea1442fafb"
+      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.3.0/gitbatch_0.3.0_linux_amd64.tar.gz"
+      sha256 "858cc8ba96ee8d5af13e557d9cd4a2af199c931ce32de447ea893cf54dd5b71d"
       define_method(:install) do
         bin.install "gitbatch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.2.0/gitbatch_0.2.0_linux_arm64.tar.gz"
-      sha256 "215efe1111fe9a4ef199ea7d16313d69a16069a46f8366f942180459efcc477f"
+      url "https://github.com/natikgadzhi/gitbatch/releases/download/v0.3.0/gitbatch_0.3.0_linux_arm64.tar.gz"
+      sha256 "51773421d543079fe65f662639ce551339c7a1f7a39b117fc0af3dc7f2aa3701"
       define_method(:install) do
         bin.install "gitbatch"
       end
