@@ -5,20 +5,20 @@
 class GdriveCli < Formula
   desc "CLI tool to search and download Google Docs, Sheets, and Slides"
   homepage "https://github.com/natikgadzhi/gdrive-cli"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.0/gdrive-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "65a511718a4d698afa0b0305ce0789bb3bd35f304173c39f9eb1657676b19c07"
+      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.1/gdrive-cli_0.3.1_darwin_amd64.tar.gz"
+      sha256 "526b4aa0c6d6296e0c5285510f7f72c7472df9dae0abffb6931dd07a52bb8753"
 
       define_method(:install) do
         bin.install "gdrive-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.0/gdrive-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "0308b650a256596623803406941ec88bdb3c52a70c68be625e9f6bb76d0365a0"
+      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.1/gdrive-cli_0.3.1_darwin_arm64.tar.gz"
+      sha256 "aa571a75c51b5a94427fa02c6e91e6e2cf062d9c0cfc8196e6992d710ab52cb6"
 
       define_method(:install) do
         bin.install "gdrive-cli"
@@ -28,15 +28,15 @@ class GdriveCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.0/gdrive-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "7aa92ac5acf1c39d8daa80052676cb51aa4c1f040a3524d5ea71ced58f2cf463"
+      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.1/gdrive-cli_0.3.1_linux_amd64.tar.gz"
+      sha256 "a2b6e198141200957ade82de4289cc2f5276a43f6581b6a061a2f43f7f1e4b91"
       define_method(:install) do
         bin.install "gdrive-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.0/gdrive-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "8715aac6f689be176aa642719bc398394918dcab7054208eacd7a47eb17a074e"
+      url "https://github.com/natikgadzhi/gdrive-cli/releases/download/v0.3.1/gdrive-cli_0.3.1_linux_arm64.tar.gz"
+      sha256 "1fa950aca8a504c544efba9d4a6e12e7bc99d0bd7dab4e53aad9cbe3675c960e"
       define_method(:install) do
         bin.install "gdrive-cli"
       end
