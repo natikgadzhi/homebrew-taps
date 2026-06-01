@@ -1,7 +1,7 @@
 # This file is updated by the copilot-auth release workflow. DO NOT EDIT.
 cask "copilot-auth" do
-  version "0.1.1"
-  sha256 "123215a3e395197ed0d7caa8429c79a4e946510df29a783605c142b45c102799"
+  version "0.1.2"
+  sha256 "dac67858e14f42ea3fb685b935f289b75b6d57241a75cc6621af1872e76ffc75"
 
   url "https://github.com/natikgadzhi/copilot-auth/releases/download/v#{version}/CopilotAuth-#{version}.dmg",
       verified: "github.com/natikgadzhi/copilot-auth/"
