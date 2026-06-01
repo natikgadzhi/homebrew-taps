@@ -5,9 +5,9 @@
 class CopilotCli < Formula
   desc "Personal CLI for Copilot Money: sync to SQLite, edit transactions, export"
   homepage "https://github.com/natikgadzhi/copilot-python"
-  url "https://github.com/natikgadzhi/copilot-python/releases/download/v0.4.0/copilot.py"
-  sha256 "63bf9276424af356dc57234f7005ab22f33e1c542858b79ec014052ff9edb7f5"
-  version "0.4.0"
+  url "https://github.com/natikgadzhi/copilot-python/releases/download/v0.4.1/copilot.py"
+  sha256 "728220910f9f78af1a010cadeb35c663d293819a5fdca948db8d1502d8cdf472"
+  version "0.4.1"
   license "MIT"
 
   # copilot.py is a single PEP 723 uv script: deps are declared inline and
