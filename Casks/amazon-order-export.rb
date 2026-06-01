@@ -1,8 +1,7 @@
 # This file is updated by the amazon-order-export release workflow. DO NOT EDIT.
-# The sha256 below is a placeholder until the first tagged release populates it.
 cask "amazon-order-export" do
-  version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  version "0.1.4"
+  sha256 "3b4435206edb15e15f4a9464c937f96977bbb978990d5e19502b2f9a94d4a957"
 
   url "https://github.com/natikgadzhi/amazon-order-export/releases/download/v#{version}/AmazonOrderExport-#{version}.dmg",
       verified: "github.com/natikgadzhi/amazon-order-export/"
