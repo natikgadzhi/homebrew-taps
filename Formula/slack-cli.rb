@@ -5,21 +5,21 @@
 class SlackCli < Formula
   desc "Read-only Slack CLI for fetching messages, threads, and history"
   homepage "https://github.com/natikgadzhi/slack-cli"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.7.0/slack-cli_0.7.0_darwin_amd64.zip"
-      sha256 "898971dd71b8acb77f85c68125d4438b86bb14b0fd2d329e94ed02765825e435"
+      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.8.0/slack-cli_0.8.0_darwin_amd64.zip"
+      sha256 "b5a30ead243b3e605a4b54a30c6ea43e30698a713901229a582b4e6e30d2886c"
 
       define_method(:install) do
         bin.install "slack-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.7.0/slack-cli_0.7.0_darwin_arm64.zip"
-      sha256 "4622efd2379acfb595aaf548f62465d89149fb3162b87a1cb2e4e9217dd89344"
+      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.8.0/slack-cli_0.8.0_darwin_arm64.zip"
+      sha256 "cc7a410e83a01cbbe85b8b7e8cc7339af634c92e635d83b1ae27ac0bc46b37a2"
 
       define_method(:install) do
         bin.install "slack-cli"
@@ -29,15 +29,15 @@ class SlackCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.7.0/slack-cli_0.7.0_linux_amd64.tar.gz"
-      sha256 "f1ca00a5082afae839578fcb7c67514cb164dba404b813dfb76d1efb661d2b1c"
+      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.8.0/slack-cli_0.8.0_linux_amd64.tar.gz"
+      sha256 "9e381955c55d5a42dac41e8786f94b3e81b1195acb01a2c23de987adef9a9dbb"
       define_method(:install) do
         bin.install "slack-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.7.0/slack-cli_0.7.0_linux_arm64.tar.gz"
-      sha256 "fa1c81528b58fb6b7f74c6d724809ef5f8cd4ddbf58407f9e77be31af04ad0af"
+      url "https://github.com/natikgadzhi/slack-cli/releases/download/v0.8.0/slack-cli_0.8.0_linux_arm64.tar.gz"
+      sha256 "8408cfc0cfb6bb5043b34277f13b3517c32b580be32d3a9e10c70af1714d3955"
       define_method(:install) do
         bin.install "slack-cli"
       end
