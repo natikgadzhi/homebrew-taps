@@ -3,13 +3,12 @@ cask "quick-icons" do
   version "0.1.0"
   sha256 "51073990a61b96f631836eab1f3de265f2c762bbac0ed3c404480d85bde717c8"
 
-  url "https://github.com/natikgadzhi/quick-icons/releases/download/v#{version}/QuickIcons-#{version}.dmg",
-      verified: "github.com/natikgadzhi/quick-icons/"
+  url "https://github.com/natikgadzhi/quick-icons/releases/download/v#{version}/QuickIcons-#{version}.dmg"
   name "Quick Icons"
   desc "Compose and export macOS app icons from SwiftUI views"
   homepage "https://github.com/natikgadzhi/quick-icons"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "QuickIcons.app"
 
